@@ -87,9 +87,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Dev\Libs\glfwlib\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Dev\Libs\glfwlib\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\include;F:\Dev\Libs\fontstash;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,15 +146,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="include\Objects\Rect.cpp" />
+    <ClCompile Include="include\artisan\Collision.cpp" />
+    <ClCompile Include="include\artisan\Draw.cpp" />
+    <ClCompile Include="include\artisan\impl.cpp" />
+    <ClCompile Include="include\artisan\Shapes.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="include\Window.cpp" />
+    <ClCompile Include="include\artisan\Window.cpp" />
+    <ClCompile Include="include\artisan\Text.cpp" />
+    <ClCompile Include="include\artisan\Time.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Window.h" />
-    <ClInclude Include="include\RGBColor.h" />
-    <ClInclude Include="include\Objects\Rect.h" />
-    <ClInclude Include="include\Vector2.h" />
+    <ClInclude Include="include\Artisan.h" />
+    <ClInclude Include="include\artisan\Collision.h" />
+    <ClInclude Include="include\artisan\Colors.h" />
+    <ClInclude Include="include\artisan\Draw.h" />
+    <ClInclude Include="include\artisan\fontstashincl.h" />
+    <ClInclude Include="include\artisan\Window.h" />
+    <ClInclude Include="include\artisan\RGBColor.h" />
+    <ClInclude Include="include\artisan\Vector2.h" />
+    <ClInclude Include="include\artisan\Shapes.h" />
+    <ClInclude Include="include\artisan\Text.h" />
+    <ClInclude Include="include\artisan\Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

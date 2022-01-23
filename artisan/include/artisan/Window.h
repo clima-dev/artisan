@@ -43,11 +43,12 @@ namespace artisan {
 		inline int KeySpace() { return (glfwGetKey(m_Window, GLFW_KEY_SPACE)); }
 
 		void setBgColor(RGBColor color);
-
+		RGBColor getBgColor() { return this->clampedBGCol; };
+		GLFWwindow* m_Window;
         void update();
 
     private:
-        GLFWwindow* m_Window;
+        
         int m_Width, m_Height;
 		RGBColor clampedBGCol;
         const char* m_Title;
