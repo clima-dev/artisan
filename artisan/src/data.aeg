@@ -1,0 +1,16 @@
+// circles
+circle 100 200 30 white
+circle 200 200 30 white
+circle 300 200 30 white
+circle 400 200 30 white
+circle 100 300 30 white
+
+// rectangles
+rec 500 500 100 100 white
+rec 200 200 200 200 white
+
+// bg
+set_bg_col 0 50 100 1
+
+// gui
+show_demo_win true

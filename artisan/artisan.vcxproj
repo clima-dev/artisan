@@ -87,9 +87,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Dev\Libs\glfwlib\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\include;F:\Dev\Libs\fontstash;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Dev\Libs\glfwlib\glfw-3.3.4.bin.WIN32\glfw-3.3.4.bin.WIN32\include;F:\Dev\Libs\fontstash;C:\Users\Wojtek\Desktop\dev\MyApplication\backends;C:\Users\Wojtek\Desktop\dev\MyApplication\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,19 +146,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="include\artisan\DataReader.cpp" />
+    <ClCompile Include="include\artisan\GUI.cpp" />
+    <ClCompile Include="include\artisan\Audio.cpp" />
     <ClCompile Include="include\artisan\Collision.cpp" />
     <ClCompile Include="include\artisan\Draw.cpp" />
+    <ClCompile Include="include\artisan\imgui_impl_glfw.cpp" />
+    <ClCompile Include="include\artisan\imgui_impl_opengl2.cpp" />
     <ClCompile Include="include\artisan\impl.cpp" />
     <ClCompile Include="include\artisan\Shapes.cpp" />
+    <ClCompile Include="include\deps\imgui\imgui.cpp" />
+    <ClCompile Include="include\deps\imgui\imgui_demo.cpp" />
+    <ClCompile Include="include\deps\imgui\imgui_draw.cpp" />
+    <ClCompile Include="include\deps\imgui\imgui_tables.cpp" />
+    <ClCompile Include="include\deps\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="include\artisan\Window.cpp" />
     <ClCompile Include="include\artisan\Text.cpp" />
     <ClCompile Include="include\artisan\Time.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\artisan\DataReader.h" />
+    <ClInclude Include="include\artisan\GUI.h" />
+    <ClInclude Include="include\artisan\Audio.h" />
     <ClInclude Include="include\Artisan.h" />
     <ClInclude Include="include\artisan\Collision.h" />
     <ClInclude Include="include\artisan\Colors.h" />
+    <ClInclude Include="include\artisan\imgui_impl_glfw.h" />
+    <ClInclude Include="include\artisan\imgui_impl_opengl2.h" />
+    <ClInclude Include="include\artisan\Math.h" />
+    <ClInclude Include="include\deps\cute_sound.h" />
     <ClInclude Include="include\artisan\Draw.h" />
     <ClInclude Include="include\artisan\fontstashincl.h" />
     <ClInclude Include="include\artisan\Window.h" />
@@ -167,6 +184,14 @@
     <ClInclude Include="include\artisan\Shapes.h" />
     <ClInclude Include="include\artisan\Text.h" />
     <ClInclude Include="include\artisan\Time.h" />
+    <ClInclude Include="include\deps\imgui\imgui.h" />
+    <ClInclude Include="include\deps\imgui\imgui_internal.h" />
+    <ClInclude Include="include\deps\imgui\imstb_rectpack.h" />
+    <ClInclude Include="include\deps\imgui\imstb_textedit.h" />
+    <ClInclude Include="include\deps\imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\data.aeg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

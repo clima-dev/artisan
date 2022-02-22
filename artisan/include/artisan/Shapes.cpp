@@ -33,3 +33,22 @@ void draw_rectangle_rec(Rect rec, color col)
 	glVertex2i(rec.x, rec.y + rec.height);
 	glEnd();
 }
+
+void draw_circle(int x, int y, float radius, color col)
+{
+	if (radius <= 0) radius = 0.1f;
+	glBegin(GL_TRIANGLE_FAN);
+	glColor4ub(col.r, col.g, col.b, col.a);
+	glVertex2f(x, y);
+
+	for (int i = 0; i <= 360; i++)
+	{
+		glVertex2f(x + sin(DEG2RAD * i) * radius, y + cos(DEG2RAD * i) * radius);
+	}
+	glEnd();
+
+}
+void draw_circle_obj(Circle data, color col)
+{
+	draw_circle(data.x, data.y, data.radius, col);
+}

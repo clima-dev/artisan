@@ -52,6 +52,7 @@ namespace artisan {
         int m_Width, m_Height;
 		RGBColor clampedBGCol;
         const char* m_Title;
+		
         bool init();
     };
 }

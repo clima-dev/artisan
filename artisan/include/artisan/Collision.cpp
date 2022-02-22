@@ -13,3 +13,14 @@ bool rec_colliding(Rect r1, Rect r2)
 
 	return false;
 }
+
+bool circle_colliding(Circle c1, Circle c2)
+{
+	float distX = c1.x - c2.x;
+	float distY = c1.y - c2.y;
+	float distance = sqrt((distX * distX) + (distY * distY));
+
+	if (distance <= c1.radius + c1.radius) { return true; };
+
+	return false;
+}

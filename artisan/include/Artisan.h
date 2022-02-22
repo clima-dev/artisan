@@ -9,3 +9,6 @@
 #include "artisan/Colors.h"
 #include "artisan/Text.h"
 #include "artisan/Time.h"
+#include "artisan/Audio.h"
+#include "artisan/GUI.h"
+#include "artisan/DataReader.h"
