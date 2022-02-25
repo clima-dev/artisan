@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    artisan::Window win(SCREEN_WIDTH,SCREEN_HEIGHT,"Artisan | Flappy Bird");
+    artisan::Window win(SCREEN_WIDTH,SCREEN_HEIGHT,"Artisan | Plain Window");
 
     win.setBgColor(artisan::RGBColor{ 244, 98, 54 });
 
